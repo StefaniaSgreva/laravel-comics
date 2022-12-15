@@ -20,7 +20,9 @@ $footer-bg: #303030;
 $footer-icons: #797979;
 $footer-blue: #0086fe;
 
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,7 +46,7 @@ a{
     height: 40px;
     font-size: .85rem;
     font-weight: 700;
-    margin: 1rem;
+    margin: 1.5rem 0;
 }
 .relative{
     position: relative;
@@ -91,10 +93,9 @@ header{
         margin: 0;
        
         li{
-            margin-right: 1rem;
+            margin-right: 2rem;
             text-transform: uppercase;
 
-    
             a{
                 color: $txt-dark;
                 font-size: .95rem;
@@ -113,8 +114,31 @@ header{
 .active{
     color: $blue;
 }
-.fa-magnifying-glass{
+.search-header{
+    border: none;
+    border-bottom: 3px solid $blue;
+    outline: none;
+    width: 150px;
+    font-family: inherit;
+    font-size: 16px;
+    font-size: max(16px, 1rem);
+    padding: 0.25em 0.5em;
+    line-height: 1;
+    height: 2.25rem;
+}
+input::placeholder {
+    text-align: end;
     color: $txt-dark;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.fa-magnifying-glass{
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    color: $txt-dark;
+   
 }
 /**********************************************
     COMICS

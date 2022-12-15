@@ -45,8 +45,8 @@
                 <a href="#">shop</a>
             </li>
         </ul>
-        <form>
-            <input type="search" placeholder="Search">
+        <form class="relative">
+            <input type="search" placeholder="Search" class="search-header">
             <i class="fa-solid fa-magnifying-glass"></i>
         </form>
     </div>
