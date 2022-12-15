@@ -1,5 +1,11 @@
+<div class="top-header">
+    <ul class="container">
+        <li>Dc Power℠ Visa®</li>
+        <li>Additional Dc Sites</li>
+    </ul>
+</div>
 <header>
-    <div class="header-container">
+    <div class="container header-container">
         <div class="logo">
             <a href="">
                 <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC logo">

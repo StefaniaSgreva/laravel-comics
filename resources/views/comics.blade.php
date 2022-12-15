@@ -4,6 +4,7 @@
 
 {{-- per richiamare lo yield e sostituirlo --}}
 @section('content')
+    <div class="jumbotron"></div>
     <h1>Current Series</h1>
     <div class="container">
         <div class="row">

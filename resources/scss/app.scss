@@ -29,6 +29,25 @@ body{
     background-color: $bg-dark;
     color: $white;
 }
+.top-header{
+    background-color: $blue;
+    padding: .25rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li{
+            font-size: .75rem;
+            font-weight: 700;
+        }
+    }
+}
 header{
     background-color: $white;
     height: 100px;
@@ -38,10 +57,9 @@ header{
 }
 .header-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 70%;
 }
 ul{
     list-style: none;
@@ -76,5 +94,12 @@ ul{
 }
 .fa-magnifying-glass{
     color: $txt-dark;
+}
+
+.jumbotron{
+    height: 450px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
