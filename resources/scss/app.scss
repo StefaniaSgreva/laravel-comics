@@ -30,7 +30,12 @@ body{
     background-color: $bg-dark;
     color: $white;
 }
-
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 .my-btn{
     text-transform: uppercase;
     background-color: $blue;
@@ -41,25 +46,27 @@ body{
     font-weight: 700;
     margin: 1rem;
 }
+.relative{
+    position: relative;
+}
 /**********************************************
     HEADER
 ***********************************************/
 .top-header{
     background-color: $blue;
-    padding: .25rem 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
+    padding: .25rem 0;    width: 100%;
 
     ul{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin-bottom: 0;
 
         li{
+            text-transform: uppercase;
             font-size: .75rem;
             font-weight: 700;
+            margin-left: 4rem;
         }
     }
 }
@@ -75,24 +82,24 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100%;
-}
-ul{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-   
-    li{
-        text-transform: uppercase;
-        margin-right: 1rem;
 
-        a{
-            text-decoration: none;
-            color: $txt-dark;
-            font-size: .95rem;
-            font-weight: 700;
+    ul{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+       
+        li{
+            margin-right: 1rem;
+            text-transform: uppercase;
+
+    
+            a{
+                color: $txt-dark;
+                font-size: .95rem;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -170,13 +177,65 @@ ul{
 /**********************************************
     FOOTER
 ***********************************************/
-
+.top-footer{
+    height: 440px;
+    background-image: url(../img//footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    nav{
+        display: flex;
+        padding-top: 2rem;
+        .R-nav{
+            
+            ul{
+                margin-top: 1rem;
+                padding: 0;
+            }
+           
+        }
+        .next-nav{
+            display: flex;
+            ul{
+                margin-top: 1rem;
+            }
+        }
+        li a{
+            color: $white;
+            opacity: .5;
+            font-size: .75rem;
+            &:hover{
+                    text-decoration: underline;
+            }
+        }
+        h4{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-bottom: .75rem;
+        }
+    }
+    .disclaimer{
+        color: $footer-icons;
+        font-weight: 600;
+        font-size: .75rem;
+    }
+    .footer-link{
+        color: $footer-blue;
+        opacity: 1;
+    }
+    .dc-logo-footer{
+        position: absolute;
+        right: 0;
+        top: -4rem;
+        transform: scale(1.1);
+    }
+}
 .bottom-footer{
     padding: 2rem 0;
     background-color: $footer-bg;
     button{
         background-color: transparent;
-        border: 2px solid $footer-blue;
+        border: 3px solid $footer-blue;
         padding: .75rem;
         color: $white;
         cursor: pointer;
