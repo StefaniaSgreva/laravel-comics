@@ -4,13 +4,20 @@
 
 {{-- per richiamare lo yield e sostituirlo --}}
 @section('content')
-    <h1>Comics</h1>
-    
-    @foreach ($comics as $comic)
-        <div>
-            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-            <h3> {{ $comic['title'] }}</h3>
+    <h1>Current Series</h1>
+    <div class="container">
+        <div class="row">
+            @foreach ($comics as $comic)
+            <div class="col-2">
+                <div class="poster">
+                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                </div>
+                <h5> {{ $comic['title'] }}</h5>
+            </div>
+            @endforeach
         </div>  
-    @endforeach
+    </div>
+    
+
     
 @endsection
