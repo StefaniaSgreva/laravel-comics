@@ -1,5 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
 
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+$fa-font-path:"~fa/../webfonts";
+@import "~fa/fontawesome.scss";
+@import "~fa/solid.scss";
+@import "~fa/regular.scss";
+@import "~fa/brands.scss";
+
+
+
 $bg-dark: #1c1c1c;
 $blue: #0282f9;
 $white: #ffffff;

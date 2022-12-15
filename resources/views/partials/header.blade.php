@@ -40,5 +40,6 @@
     </ul>
     <form>
         <input type="search" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
     </form>
 </header>
