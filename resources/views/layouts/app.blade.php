@@ -18,7 +18,7 @@
 <body>
     @include('partials.header')
     <main>
-        @yield('content')
+        @yield('content') <!--placeholder - segnaposto-->
     </main>
     @include('partials.footer')
 </body>

@@ -1,1 +1,59 @@
 @import '~bootstrap/scss/bootstrap';
+
+$bg-dark: #1c1c1c;
+$blue: #0282f9;
+$white: #ffffff;
+$txt-dark: #414543;
+$text-light: #838480;
+$footer-bg: #303030;
+$footer-icons: #797979;
+$footer-blue: #0086fe;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bg-dark;
+    color: $white;
+}
+header{
+    background-color: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   
+    li{
+        text-transform: uppercase;
+        margin-right: 1rem;
+        
+
+        a{
+            text-decoration: none;
+            color: $txt-dark;
+            font-size: .85rem;
+            font-weight: 700;
+        }
+    }
+}
+.logo{
+    width: 70px;
+    vertical-align: middle;
+    img{
+        width: 100%;
+    }
+}
+.active{
+    color: $blue;
+}
